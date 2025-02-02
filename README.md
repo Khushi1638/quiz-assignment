@@ -47,7 +47,7 @@ The solution for the quiz assignment can be found [here](https://khushi1638.gith
 
 Watch the video below to see how the quiz works:
 
-[![Quiz Assignment Demo](https://img.youtube.com/vi/your-video-id/0.jpg)](Screen Recording 2025-02-02 185808.mp4)
+[![Quiz Assignment Demo](https://img.youtube.com/vi/your-video-id/0.jpg)](screen-recording.mp4)
 
 
 ## Contact
