@@ -19,11 +19,11 @@ This quiz application features multiple choice questions with instant feedback, 
 
 ## Repository
 
-You can find the repository for this project [here](https://github.com/yourusername/quiz-assignment).
+You can find the repository for this project [here](https://github.com/khushi1638/quiz-assignment).
 
 ## Solution
 
-The solution for the quiz assignment can be found [here](https://github.com/yourusername/quiz-assignment/solution).
+The solution for the quiz assignment can be found [here](https://khushi1638.github.io/quiz-assignment/).
 
 ## Installation
 
@@ -47,7 +47,7 @@ The solution for the quiz assignment can be found [here](https://github.com/your
 
 Watch the video below to see how the quiz works:
 
-[![Quiz Assignment Demo](https://img.youtube.com/vi/your-video-id/0.jpg)](https://www.youtube.com/watch?v=your-video-id)
+[![Quiz Assignment Demo](https://img.youtube.com/vi/your-video-id/0.jpg)](Screen Recording 2025-02-02 185808.mp4)
 
 
 ## Contact
