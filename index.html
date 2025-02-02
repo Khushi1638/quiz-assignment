@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Take a quick Quiz</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Adding the link tag to include icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Take a Quick Quiz</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="quiz-heading">Take a Quiz</h1>
+    </header>
 
-    <script src="app.js"></script>    
-</body>
+    <main>
+      <!-- Quiz Introduction Section -->
+      <section aria-labelledby="quiz-heading" class="quiz-container" role="region">
+        <p>Test your knowledge with our interactive quiz!</p>
+
+        <!-- Avatar Selection -->
+        <div class="avatar-selection" role="group" aria-labelledby="avatar-label">
+          <label for="avatar" id="avatar-label">Choose Your Avatar:</label>
+          <select id="avatar" aria-label="Select your avatar">
+            <option value="avatar1">🧑</option>
+            <option value="avatar2">👩</option>
+            <option value="avatar3">👨‍🎓</option>
+          </select>
+        </div>
+
+        <!-- Start Quiz Button -->
+        <button id="start-quiz" aria-label="Start the quiz" role="button">Start Quiz</button>
+      </section>
+
+      <!-- Countdown Container -->
+      <div id="countdown-container" class="hidden" role="region" aria-live="assertive">
+        <span id="countdown" aria-live="assertive"></span>
+      </div>
+
+      <!-- Quiz Question Section -->
+      <section id="quiz" class="hidden" role="region" aria-labelledby="question-container">
+        <div id="question-container" aria-live="polite"></div>
+        <div id="options-container" role="group" aria-labelledby="options-label"></div>
+        
+        <div class="quiz-footer">
+          <p id="timer">Time Left: <span id="time">30</span> sec</p>
+          <button id="next-question" aria-label="Go to next question">Next Question</button>
+        </div>
+        <div id="description-container" class="hidden"></div>
+      </section>
+
+      <!-- Quiz Result Section -->
+      <section id="result-container" class="hidden" role="region" aria-live="polite">
+        <h2>Quiz Completed 🎉</h2>
+        <p><strong>Correct Answers:</strong> <span id="correct-answers">0</span></p>
+        <p><strong>Wrong Answers:</strong> <span id="wrong-answers">0</span></p>
+        <button id="restart-quiz" aria-label="Restart the quiz" role="button">Restart Quiz</button>
+      </section>
+    </main>
+
+    <!-- External Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.1"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
